@@ -1,4 +1,4 @@
-var path = require('path');
+let path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -8,7 +8,7 @@ module.exports = {
         app: './src/index.js',
         print: './src/print.js'
     },
-        devtool: 'inline-source-map',
+        devtool: 'source-map',
         devServer: {
           contentBase: './dist'
         },

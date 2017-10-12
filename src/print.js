@@ -6,4 +6,5 @@ export default function printMe() {
     div.innerHTML = 'I get called from print.js!';
     // console.log('I get called from print.js!');
     document.body.appendChild(div);
+    throw Error ('ThrownError');
 }
